@@ -1,0 +1,41 @@
+{
+  "author": {
+    "name": "sigmasoldi3r",
+    "email": "pablobc.1995@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sigmasoldi3r/language-lang-grammar/issues"
+  },
+  "dependencies": {},
+  "description": "Language grammar for Lang type files (Argochamber Lang)",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.196.0 <2.0.0"
+  },
+  "homepage": "https://github.com/sigmasoldi3r/language-lang-grammar#readme",
+  "keywords": [
+    "grammar",
+    "syntax",
+    "lang",
+    "love2d"
+  ],
+  "license": "MIT",
+  "name": "language-lang",
+  "optionalDependencies": {},
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigmasoldi3r/language-lang-grammar.git"
+  },
+  "version": "1.0.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

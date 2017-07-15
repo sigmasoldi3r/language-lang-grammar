@@ -1,0 +1,75 @@
+'fileTypes': [
+  'lang'
+]
+'name': 'Lang Engine'
+'patterns': [
+  {
+    'include': '#comment'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.control.lang'
+      '2':
+        'name': 'entity.name.function.scope.lang'
+    'match': '^(@namespace)(\\s+[A-Z_]+)'
+    'name': 'meta.directive.namespace.lang'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.control.lang'
+    'match': '^(@namespace\\.)'
+    'name': 'meta.directive.namespace-null.lang'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.control.lang'
+      '2':
+        'name': 'language.comment.lang'
+    'match': '^(@echo)(\\s+.*)'
+    'name': 'meta.directive.echo.lang'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.control.lang'
+      '2':
+        'name': 'entity.name.tag.lang'
+      '3':
+        'name': 'keyword.control.lang'
+      '4':
+        'name': 'entity.name.lang'
+    'match': '^(@\\{)(\\w+)(\\})(.*)'
+    'name': 'meta.directive.custom.lang'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'entity.name.constant.lang'
+      '2':
+        'name': 'keyword.operator.assign.lang'
+      '3':
+        'name': 'language.string.definition.lang'
+    'match': '^([A-Z_]+)(=)(.*)'
+    'name': 'language.definition.string.lang'
+  }
+  {
+    'match': '^.*'
+    'name': 'invalid.illegal.invalid-lang-def.lang'
+  }
+]
+'repository':
+  'comment':
+    'captures':
+      '1':
+        'name': 'comment.line.number-sign.lang'
+      '2':
+        'name': 'punctuation.definition.comment.lang'
+      '3':
+        'name': 'comment.line.semi-colon.lang'
+      '4':
+        'name': 'punctuation.definition.comment.lang'
+    'match': '((#).*$\\n?)|((;).*$\\n?)'
+'scopeName': 'source.lang'
